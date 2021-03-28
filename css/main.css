@@ -6,31 +6,33 @@ body {
 
 header {
 	/* positioning */
-	display: inline-flex;
+	display: flex;
 	flex-flow: row wrap;
-	width: 100%;
+	width: 1280px; /* so the shadow effect appears in the whole page width */
 	height: 80px;
+	
 	position: fixed;
+	justify-content: center;
 	align-items: center;
 	top: 0;
-	left: 0;
+	
 	/* styling */
-	background-color: #ffffff;
-	box-shadow: 0 4px 10px 0 rgba(0,0,0,.2);
-	font-weight: medium;
+	background-color: #fff;
+	box-shadow: 0 10px 10px rgba(0,0,0,.2);
 	z-index: 1; /* fix brighness filter overlapping header bug */
 }
 
 nav {
-	margin-right: auto; /* the way that I found to put the links beside the logo in the navbar */
+	margin-right: auto; /* the way that I found to put the nav bar in the left */
 }
 
 a {
+	padding: 6px 38px;
 	text-decoration: none;
 	font-weight: bold;
+	font-size: 16px;
 	color: #fff;
 	border: solid 4px black;
-	padding: 12px 30px;
 	}
 
 h1 {
@@ -42,6 +44,12 @@ h2 {
 	font-size: 20px;
 	font-weight: 400;
 }
+
+i {
+	padding-left: 8px;
+	vertical-align: middle;
+}
+
 /* CLASSES */
 
 	
@@ -52,12 +60,23 @@ h2 {
 	}
 	
 	
+	#site_container {
+	margin: 0 auto;
+	width: 1280px;
+	overflow: hidden;
+	}
 
+	/* google icons */
+
+	.material-icons .material-icons-outlined {
+		vertical-align: middle;
+	}
 
 	/* NAV BAR */
 		.logo_nav {
-			width: 90px;
-			margin-left: 60px;
+			max-width: 73px;
+			padding-left: 84px; /* aligned with site container */
+	
 		}
 
 		.nav_links {
@@ -68,38 +87,30 @@ h2 {
 
 		.nav_links li {
 			/*display: inline-block;*/
-			padding: 0px 20px;	
+			padding-right: 20px;	
 		}
 
 		.nav_links li:hover {
 			opacity: 70%;
-			cursor: pointer;
 		}
+
 
 		.nav_buttons {
 			display: flex;
-			flex-wrap: wrap;
-			margin-right: 60px;
+			justify-content: center;
+			padding-top: 5px;
+			padding-right: 70px; /* aligned with site container */
 		}
 
-		
-		.icon_login, .icon_search, .icon_cart {
-			/* controls icons as ICONS itself */
-			height: 24px;
-		}
-		
-		.icon_login {
-			float: right;
-			padding-left: 5px;
-			text-decoration: none;
-			color: black;
+		.nav_icons {
+			padding: 0 20px 0 0;
 		}
 
-		.icon_login:hover, .icon_search:hover, .icon_cart:hover {
+		.nav_icons:hover {
 			opacity: 70%;
 		}
 
-
+/* HOME */
 	/* BANNER HOME */
 
 		.banner_home {
@@ -108,29 +119,31 @@ h2 {
 			align-items: flex-start;
 			flex-flow: column wrap;
 
-			width: 1200px;
-			height: 316px;
-			padding-left: 100px;
-			margin: 130px auto 50px; /*auto = center */
+			max-width: 1110px; 
+			padding: 79px 0 79px 50px;
+			margin: 130px 84px 50px 84px; /*auto = center */
 			color: white;
 			background-image: url(../images/background_test.jpg); /* ../ goes back one folder and starts from there */
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
-			background-filter: brightness(80%);
 		}
 
+		
+
 		.banner_title {
+			margin-top: auto;
 			margin-bottom: -20px;
+			font-size: 38px;
 		}
 
 		.banner_subtitle {
 			padding-bottom: 10px;
 			margin-bottom: -3px;
+			font-size: 23px;
 		}
 
 		.btn_shop {
-			padding: 6px 20px;
 			border-color: #fff;
 		}
 
@@ -145,14 +158,14 @@ h2 {
 		.catHomeContainer {
 			display: flex;
 			flex-flow: row wrap;
-			justify-content: space-around;
-			margin-right: 100px;
-			margin-left: 100px;
+			justify-content: space-between;
+			margin-right: 190px;
+			margin-left: 190px;
 		}
 
 		.img_category_home {
-			width: 325px;
-			height: 450px;
+			max-width: 216px;
+			max-height: 306px;
 			padding-bottom: 25px;
 		}
 
@@ -164,6 +177,7 @@ h2 {
 		.img_a {
 			border: none;
 			padding: 0;
+			margin: 0;
 		}
 		.cat_card {
 			display: flex;
@@ -173,10 +187,10 @@ h2 {
 		.btn_cat {
 			color: black;
 			text-align: center;
-			width: 100px;
-			height: 15px;
 			align-self: center;
-			line-height: 15px;
+			width: 88px; /* if padding set, the buttons have different width */
+			padding-top: 6px;
+			padding-bottom: 6px;
 		}
 
 		.btn_cat:hover {
@@ -189,26 +203,25 @@ h2 {
 
 		.colletionContainer {
 			display: flex;
-			justify-content: center;
+			justify-content: space-between;
 			align-items: center;
-			flex-direction: row wrap;
-			margin-top: 100px;
+			flex-flow: row wrap;
+			margin: 100px 190px 0 190px;
+
 		}
 
 		.img_collection {
-			width: 450px;
+			width: 404px;
 		}
 
 		.col_copy {
-			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
-			padding-right: 140px;
+			font-size: 26px;
+		
+		
 		}
 
 		.btn_col {
-			width: 120px;
-			height: 15px;
+			padding: 6px 41px;
 			color: black;
 			text-align: center;
 			line-height: 15px; /* center align text vertically */
@@ -228,7 +241,9 @@ h2 {
 			justify-content: center;
 
 			margin: 100px auto;
-			width: 1200px;
+			padding: 32px 0 32px 0;
+			width: 1110px;
+			/* height: 128px; */
 			font-size: 16px;
 			color: black;
 
@@ -243,13 +258,13 @@ h2 {
 			justify-content: center;
 			align-items: center;
 
-			width: 1200px;	/* fits 4 items in each row */		
+			width: 952px;	/* fits 4 items in each row (calc: card width+margin left)*/	
 
 			margin: 0 auto;
 		}
 
 		.onsale {
-			padding-left: 200px;
+			margin-left: 160px;
 			font-size: 30px;
 			font-weight: bold;
 		}
@@ -257,13 +272,14 @@ h2 {
 		.onsale_card {
 			display: flex;
 			flex-flow: column wrap;
-			padding-right: 30px;
-			padding-bottom: 40px;
-			align-items: center;
+
+			margin: 0 60px 60px 0;
+		
 		}
 		
 		.img_onsale {
-			width: 250px;
+			width: 178px;
+			height: 220px;
 		}
 
 		.img_onsale:hover {
@@ -272,18 +288,16 @@ h2 {
 
 		.product_name {
 			margin-top: 0;
-			padding-bottom: -15px;
-
 		}
 
 		.prices_onsale {
-			font-weight: 500;
+			font-weight: bold;
 			margin-top: -15px;
 		}
 
 		.btn_onsale {
-			width: 100px;
-			height: 10px;
+			font-size: 14px;
+			padding: 12px 30px;
 			color: black;
 			text-align: center;
 			line-height: 10px;
@@ -308,7 +322,7 @@ h2 {
 
 		.newsletter_h {
 			font-size: 24px;
-			font-weight: 
+			font-weight: bold;
 		}
 
 		.newsletter_p {
@@ -320,12 +334,12 @@ h2 {
 
 	.footerContainer {
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-between;
+		width: 1100px;
 
+		margin: 120px auto -30px;
 		padding-top: 30px;
 		padding-bottom: 30px;
-
-		margin: 80px 120px 0 120px; /* top, right, bottom, left */
 		}
 
 	
@@ -344,28 +358,219 @@ h2 {
 
 	.footer_item:hover {
 		font-weight: bold;
-		cursor: pointer;
 	}
 
 	.footer_copy {
 		text-align: center;
-
 		font-weight: 400;
 	}
+
+
+/* CLOTHING PAGE */
+
+	
+	/* PRODUCTS CONTAINER */
+
+	.productsContainer {
+		display: flex;
+		justify-content: center;
+	}
+	/* Categories List */
+	.catListContainer {
+		display: flex;
+		flex-flow: column wrap;
+		margin-left: 60px; /* compensate clothing card margin 60 */
+	}
+	
+	.catList_title {
+		margin-bottom: -10px; /* align cat_list items to clothing images */
+	}
+	.catListLinks {
+		list-style: none;
+		padding-left: 0;
+	}
+
+	.catListLinks li:hover {
+		font-weight: bold;
+	}
+
+/* Clothing Product List */
+	.clothingContainer {
+	display: flex;
+	flex-flow: row wrap;
+	
+	margin-left: 80px; /* spacing between cat and clothing */ 
+	width: 856px;	/* fits 4 items in each row (calc: card width+margin left*/
+		
+		}
+
+		.clothing {
+			align-self: flex-start;
+			padding-right: 700px;
+		}
+
+		.prodClothing_card {
+			display: flex;
+			flex-flow: column wrap;
+			margin: 0 60px 60px 0;
+		}
+		
+		.img_clothing {
+		width: 150px;
+		}
+
+		.img_clothing:hover {
+			filter: brightness(80%); /* black overlay */
+		}
+
+		.prodClothing_name {
+			margin-top: 0;
+		}
+
+		.color_selector, .size_selector {
+			display: flex;
+		}
+
+		.color_1, .color_2, .color_3, .color_4 {
+			width: 15px;
+			height: 15px;
+			margin-right: 10px;
+			margin-top: -10px;
+			margin-bottom: 1px;
+			background-color: gray;
+		}
+
+		.color_1:hover, .color_2:hover, .color_3:hover, .color_4:hover {
+			filter: brightness(90%);
+		}
+
+		.size_item:hover {
+			font-weight: bold;
+		}
+
+		.color_1 {
+			background-color: red;
+		} 
+
+		.color_2 {
+			background-color: lightblue;
+		}
+
+		.color_3 {
+			background-color: purple;
+		}
+
+		.color_4 {
+			background-color: lightgray;
+		}
+
+		.size_item {
+			margin-right: 10px;
+			margin-bottom: 13px;
+		}
+		.prices_clothing {
+			font-weight: bold;
+			margin-top: -15px;
+		}
+
+		.btn_clothing {
+			padding: 12px 25px;
+			color: black;
+			text-align: center;
+			line-height: 10px;
+			margin-top: -5px;
+		}
+
+		.btn_clothing:hover {
+			background-color: black;
+			color: #fff;
+		}
+
+		.btn_cta_clothing {
+			color: black;
+			margin-left: 270px; /* aligned with the clothing container not the whole section */
+			margin-bottom: 100px;
+		}
+
+		.btn_cta_clothing:hover {
+			color: #fff;
+			background-color: black;
+		}
+
+	
+/* COLLECTIONS CATEGORIES */
+	.collClothingContainer {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+
+	.collec_card {
+		display: flex;
+		justify-content: center;
+		margin-right: 30px;
+		margin-left: 30px;
+	}
+
+	.img_col_clothing {
+		width: 216px
+	}
+	.btn_col_clothing {
+		position: absolute; /* positionate the button in the middle of the image */
+		margin-top: 200px;
+		border-color: #fff;
+	}
+
+	.btn_col_clothing:hover {
+			color: black;
+			background-color: white;
+	}
+
+/* ABOUT US CTA */
+	.aboutCtaContainer {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			flex-flow: row wrap;
+			margin: 100px 140px 0 140px;
+		}
+
+		.img_collection /* change to about img */ {
+			width: 404px;
+		}
+
+		.cta_copy {
+			font-size: 26px;
+		}
+
+		.btn_about {
+			padding: 6px 41px;
+			color: black;
+			text-align: center;
+			line-height: 15px; /* center align text vertically */
+		}
+
+		.btn_col:hover {
+			color: #fff;
+			background-color: black;
+		}
 
 /* IDS */
 
 	/* NAV ICONS */
 
-	#icon_search, #icon_cart, #icon_login {
-		/* controls the icons as LINKS */
-	text-decoration: none;
-	font-weight: 400;
-	color: black;
-	border: none;
-	padding: 0 13px;
+	 #icon_search, #icon_cart, #icon_login {
+		/* turn off button styling */
+		font-weight: normal;
+		text-decoration: none;
+		color: black;
+		border: none;
+		padding: 0;
 	}
 
+	#icon_login:hover {
+		opacity: 70%	
+	}
 
 	/* NEWSLETTER INPUT */
 
@@ -374,26 +579,26 @@ h2 {
 			height: 25px;
 
 			border: solid black 4px;
-
 			padding-left: 20px;
+
+			background: none;
 		}
 
 		#subNewsletter {
 			height: 35px;
-			margin-left: -4px;
+			margin-left: -5px;
 			padding-right: 10px;
 			
 			border: solid black 4px;
-			background-color: black;
-
-			color: #fff;
+			background: none;
+			color: black;
 			font-weight: bold;
 		}
 
 		#subNewsletter:hover {
 			border: solid black 4px;
-			background-color: white;
+			background-color: black;
 
-			color: black;
+			color: #fff;
 			font-weight: bold;
 		}
