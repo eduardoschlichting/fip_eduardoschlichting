@@ -91,7 +91,7 @@ i {
 		}
 
 		.nav_links li:hover {
-			opacity: 70%;
+			opacity: 60%;
 		}
 
 
@@ -107,7 +107,7 @@ i {
 		}
 
 		.nav_icons:hover {
-			opacity: 70%;
+			opacity: 60%;
 		}
 
 /* HOME */
@@ -392,6 +392,7 @@ i {
 
 	.catListLinks li:hover {
 		font-weight: bold;
+		cursor: pointer;
 	}
 
 /* Clothing Product List */
@@ -429,6 +430,7 @@ i {
 
 		.color_selector, .size_selector {
 			display: flex;
+			cursor: pointer;
 		}
 
 		.color_1, .color_2, .color_3, .color_4 {
