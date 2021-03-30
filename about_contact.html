@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Dui Clothing - Fashion for Men Who Cares About Themselves</title>
+<title>About us - Dui Clothing</title>
 <!--link href="css/reset.css" rel="stylesheet" type="text/css" media="screen"-->
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined"><!-- Icons from google material icons for the buttons and nav -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined"><!-- Icons from google material icons for the buttons and nav -->
 </head>
 <body>
 
-	<h1 class="hidden">FIP Project - Eduardo Schlichting</h1>
+	<h1 class="hidden">About Us and Contact Page</h1>
 
 	<div id="site_container">
 
@@ -35,62 +35,72 @@
 
 		</header>
 
-		<section class="banner_home">
+		<section class="hero_site">
 			<h1 class="hidden">Banner Home</h1>
-				<h1 class="banner_title">DUI Clothing &#x1F91F;</h1>
-				<h2 class="banner_subtitle">Quality outfits for men who care</br> about themselves.</h2>
-				<a class="btn_shop" href="#">go shop<i class="material-icons">arrow_forward</i></a>
-				
+				<h1 class="banner_title">Based in London, Ontario &#x1F1E8;&#x1F1E6;</h1>
+				<h2 class="banner_subtitle">The Forest City of Canada.</h2>
+
 		</section>
 
-		<section class="catHomeContainer">
-			<h1 class="hidden">Categories Home</h1>
-				<article class="cat_card">
-					<h3 class="hidden">Clothing</h3>
-					<a href="#" class="img_a"><img class="img_category_home" src="images/model_1.jpg" alt="model1"></a>
-						<a class="btn btn_cat" href="#">clothing</a>
-				</article>
-					
-				<article class="cat_card">
-					<h3 class="hidden">Shoes</h3>
-					<a href="#" class="img_a"><img class="img_category_home" src="images/model_1.jpg" alt="model1"></a>
-						<a class="btn btn_cat" href="#">shoes</a>
-				</article>
+		<section>
+			<h1 class="hidden">About DUI Clothing</h1>
+			<div class="aboutContainer">
+				<h1 class="about_title">We are DUI CLothing&trade;</h1>
+					<div class="about_p">
+						<p>Created by people with passion for fashion and lifestyle, here we have the objective to give Men a new vision of Men's Fashion, bringing simple, but significant and elegant clothes to your wardrobe.</p>
+					</div>
 
-				<article class="cat_card">
-					<h3 class="hidden">Hats</h3>
-					<a href="#" class="img_a"><img class="img_category_home" src="images/model_1.jpg" alt="model1"></a>
-						<a class="btn btn_cat" href="#">hats</a>
-				</article>
 		</section>
 
-		<section class="colletionContainer">
-			<h1 class="hidden">Special Collection</h1>
-				<div class="col_copy">
-					<h2 class="special_collection">Special collection with exclusive<br> products selected for you.</h2>
-					<a class="btn btn_col" href="#">see collection  <i class="material-icons">arrow_forward</i></a>
+		<section class="collectionContainer materialsContainer">
+			<h1 class="hidden">Materials DUI</h1>
+				<div class="materials_copy">
+					<h2>Our products are made of high quality, locally sourced  materials to provide you the ultimate comfort.</h2>
 				</div>
-				<a href="#" class="img_a"><img class="img_collection" src="images/collection_clothes.jpg" alt="clothes collection"></a>
+				<a href="#" class="img_a"><img class="img_materials" src="images/collection_clothes.jpg" alt="clothes collection"></a>
+		</section>
+
+		<section class="hero_site banner_quote">
+			<h1 class="hidden">Banner About</h1>
+				<h2 class="bannerQuote_title">From Men to Men.<br>The DUI Brand is made of men concerned about today’s fashion and seek for a more stylish world.</h1>
+
 		</section>
 
 		<aside class="asideContainer">
 			<h2 class="hidden">Aside Quote</h2>	
-			<h3>"Style is knowing who you are, what you want to say, and not giving a damn"</h3>
+			<h3>“Whoever said that money can’t buy happiness, simply didn’t know where to go shopping.” — Bo Derek</h3>
 		</aside>
 
-		<section class="newsletterContainer">
-			<h1 class="hidden">Newsletter Section</h1>
+		<section>
+			<h1 class="hidden">Contact Form</h1>
+			
+			<div class="contactContainer">
+				<h1 class="contact_title">Do you have any doubts, enquires or concerns? Contact us!</h1>
+				<h2 class="contact_subtitle">Just tell us your name, the matter of your contact, and we'll reply to you as soon as possible :D</h2>
+			</div>
 
-			<h2 class="newsletter_h">Wanna receive our amazing offers directly in your inbox?</h2>
-			<p class="newsletter_p">Subscribe now to our newsletter!</p>
+				<form class="contactFormContainer" action="form.php" method="post" name="contactForm">
 
-			<form class="formContainer">
+					<label for="firstName">What is your first name?</label>
+					<input type="text" name="firstname" placeholder="Your first name" id="firstName">
+
+					<label for="lastName">And your last name?</label>
+					<input type="text" name="lastname" placeholder="Your last name" id="lastName">
+					
+					<label for="matter">Why are you contacting us?</label>
+					
+					<select name="matter" id="Matter">
+						<option value="payment">Payments</option>
+						<option value="shipping">Shippping</option>
+						<option value="tracking">Track your order</option>
+						<option value="returns">Returns</option>
+						<option value="other">Other</option>
+					</select>
+
+					<label for="message">Message:</label>
+					<textarea rows="1" cols="1" placeholder="Your message" name="message" id="Message"></textarea>
 				
-				<input type="text" name="email" id="newsletterInput" placeholder="your best e-mail">
-
-				<input type="submit" value="subscribe" id="subNewsletter">
-
-			</form>
+				<button type="Submit">Submit</button>
 
 		</section>
 

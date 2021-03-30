@@ -26,7 +26,7 @@ nav {
 	margin-right: auto; /* the way that I found to put the nav bar in the left */
 }
 
-a {
+a, button {
 	padding: 6px 38px;
 	text-decoration: none;
 	font-weight: bold;
@@ -72,6 +72,29 @@ i {
 		vertical-align: middle;
 	}
 
+
+/* NEWSLETTER */
+
+		.newsletterContainer {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-flow: column wrap;
+
+			margin-top: 80px;
+		}
+
+		.newsletter_h {
+			font-size: 24px;
+			font-weight: bold;
+		}
+
+		.newsletter_p {
+			font-size: 20px;
+			margin-top: -10px;
+		}
+
+
 	/* NAV BAR */
 		.logo_nav {
 			max-width: 73px;
@@ -113,7 +136,7 @@ i {
 /* HOME */
 	/* BANNER HOME */
 
-		.banner_home {
+		.hero_site {
 			display: flex;
 			justify-content: center;
 			align-items: flex-start;
@@ -121,15 +144,13 @@ i {
 
 			max-width: 1110px; 
 			padding: 79px 0 79px 50px;
-			margin: 130px 84px 50px 84px; /*auto = center */
+			margin: 130px 84px 50px 84px; /* 84px align center */
 			color: white;
 			background-image: url(../images/background_test.jpg); /* ../ goes back one folder and starts from there */
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
-
-		
 
 		.banner_title {
 			margin-top: auto;
@@ -138,6 +159,7 @@ i {
 		}
 
 		.banner_subtitle {
+			padding-right: 100px;
 			padding-bottom: 10px;
 			margin-bottom: -3px;
 			font-size: 23px;
@@ -203,10 +225,11 @@ i {
 
 		.colletionContainer {
 			display: flex;
-			justify-content: space-between;
+			justify-content: space-around;
 			align-items: center;
 			flex-flow: row wrap;
-			margin: 100px 190px 0 190px;
+			margin: 100px auto;
+			width: 850px;
 
 		}
 
@@ -216,8 +239,7 @@ i {
 
 		.col_copy {
 			font-size: 26px;
-		
-		
+			padding-right: 30px;
 		}
 
 		.btn_col {
@@ -259,14 +281,20 @@ i {
 			align-items: center;
 
 			width: 952px;	/* fits 4 items in each row (calc: card width+margin left)*/	
-
-			margin: 0 auto;
+			margin-left: 190px;
 		}
 
-		.onsale {
-			margin-left: 160px;
+		.onsale_title {
+			margin-bottom: 0;
+			margin-left: 190px;
 			font-size: 30px;
 			font-weight: bold;
+		}
+
+		.onsale_subtitle {
+			margin-top: auto;
+			margin-left: 190px;
+			font-weight: normal;
 		}
 
 		.onsale_card {
@@ -309,26 +337,7 @@ i {
 			color: #fff;
 		}
 
-		/* NEWSLETTER */
-
-		.newsletterContainer {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-flow: column wrap;
-
-			margin-top: 80px;
-		}
-
-		.newsletter_h {
-			font-size: 24px;
-			font-weight: bold;
-		}
-
-		.newsletter_p {
-			font-size: 20px;
-			margin-top: -10px;
-		}
+		
 
 	/* FOOTER */
 
@@ -408,6 +417,8 @@ i {
 		.clothing {
 			align-self: flex-start;
 			padding-right: 700px;
+			font-weight: bold;
+			font-size: 24px;
 		}
 
 		.prodClothing_card {
@@ -507,6 +518,9 @@ i {
 		justify-content: center;
 	}
 
+	.collClothing_title {
+		margin-left: 110px;
+	}
 	.collec_card {
 		display: flex;
 		justify-content: center;
@@ -557,6 +571,107 @@ i {
 			background-color: black;
 		}
 
+
+/* ABOUT CONTACT PAGE */
+	
+	/* ABOUT CONTAINER */
+		.aboutContainer {
+			display: flex;
+			justify-content: center;
+			flex-flow: column wrap;
+			margin-top: 80px;
+		}
+
+			.about_title {
+				margin: auto;
+			}
+
+			.about_p {
+				width: 600px;
+				margin: auto;
+
+				text-align: center;
+			}
+	
+	/* MATERIALS CONTAINER */
+
+	.materialsContainer {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			flex-flow: row-reverse wrap;
+			margin: 100px 190px;
+		}
+
+		.img_materials {
+			width: 360px;
+		}
+
+		.materials_copy {
+			width: 300px;
+			font-size: 26px;
+		}
+
+	/* BANNER QUOTE */
+
+	.banner_quote {
+		max-width: 924px;
+		margin: 100px auto;
+		background-image: url(../images/about_desc.jpg);
+	}
+
+	.bannerQuote_title {
+		padding-left: 450px;
+		padding-right: 150px;
+	}
+
+
+	/* CONTACT FORM */
+
+	.contactContainer {
+		display: flex;
+		flex-direction: column;
+	}
+
+		.contact_title, .contact_subtitle {
+			margin: 0 auto;
+			margin-bottom: 10px;
+		}
+
+		.contactFormContainer {
+			display: flex;
+			flex-flow: column wrap;
+			align-items: center;
+		}
+
+		.contactFormContainer input, select, textarea {
+			margin-top: 5px;
+			margin-bottom: 10px;
+
+			border: solid 4px black;
+			width: 300px;
+			padding: 12px 20px;
+
+			font-family: inherit;
+		}
+		
+		.contactFormContainer textarea {
+			width: 400px;
+			height: 100px;
+		}
+
+		.contactFormContainer button {
+			background-color: none;
+			color: black;
+		}
+
+		.contactFormContainer button:hover {
+			background-color: black;
+			color: #fff;
+			cursor: pointer;
+		}
+
+		
 /* IDS */
 
 	/* NAV ICONS */
@@ -587,6 +702,7 @@ i {
 		}
 
 		#subNewsletter {
+			display: inline-block;
 			height: 35px;
 			margin-left: -5px;
 			padding-right: 10px;
