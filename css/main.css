@@ -7,7 +7,7 @@ body {
 header {
 	/* positioning */
 	display: flex;
-	flex-flow: row wrap;
+	flex-wrap: wrap;
 	width: 1280px; /* so the shadow effect appears in the whole page width */
 	height: 80px;
 	
@@ -24,6 +24,8 @@ header {
 
 nav {
 	margin-right: auto; /* the way that I found to put the nav bar in the left */
+	flex-wrap: wrap;
+
 }
 
 a, button {
@@ -42,13 +44,25 @@ h1 {
 
 h2 {
 	font-size: 20px;
-	font-weight: 400;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 16px;
+}
+
+label {
+	font-size: 14px;
+	font-weight: bold;
 }
 
 i {
 	padding-left: 8px;
 	vertical-align: middle;
 }
+
+
+
 
 /* CLASSES */
 
@@ -65,6 +79,16 @@ i {
 	width: 1280px;
 	overflow: hidden;
 	}
+
+
+	.nav_link {
+		font-weight: normal;
+		text-decoration: none;
+		color: black;
+		border: none;
+		padding: 0;
+	}
+
 
 	/* google icons */
 
@@ -238,7 +262,6 @@ i {
 		}
 
 		.col_copy {
-			font-size: 26px;
 			padding-right: 30px;
 		}
 
@@ -294,7 +317,6 @@ i {
 		.onsale_subtitle {
 			margin-top: auto;
 			margin-left: 190px;
-			font-weight: normal;
 		}
 
 		.onsale_card {
@@ -367,11 +389,13 @@ i {
 
 	.footer_item:hover {
 		font-weight: bold;
+		cursor: pointer;
 	}
 
 	.footer_copy {
 		text-align: center;
 		font-weight: 400;
+		font-size: 14px;
 	}
 
 
@@ -535,6 +559,10 @@ i {
 		position: absolute; /* positionate the button in the middle of the image */
 		margin-top: 200px;
 		border-color: #fff;
+		width: 70px;
+		padding-top: 6px;
+		padding-bottom: 6px;
+		text-align: center;
 	}
 
 	.btn_col_clothing:hover {
@@ -609,7 +637,6 @@ i {
 
 		.materials_copy {
 			width: 300px;
-			font-size: 26px;
 		}
 
 	/* BANNER QUOTE */
@@ -621,8 +648,8 @@ i {
 	}
 
 	.bannerQuote_title {
-		padding-left: 450px;
-		padding-right: 150px;
+		padding-left: 550px;
+		padding-right: 50px;
 	}
 
 
@@ -654,7 +681,7 @@ i {
 
 			font-family: inherit;
 		}
-		
+
 		.contactFormContainer textarea {
 			width: 400px;
 			height: 100px;
@@ -671,10 +698,82 @@ i {
 			cursor: pointer;
 		}
 
-		
+
+
+/* COLLECTIONS PAGE */
+
+	.discount_aside {
+		padding: 0;
+		margin: 130px auto 60px;
+	}
+
+	/* PRODUCT CONTAINER */
+
+	.productContainer {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-around;
+		align-items: center;
+		margin: 0 280px;
+		}
+
+	.collection_title {
+		margin-left: 330px;
+		margin-bottom: 40px;
+	}
+
+	.product_details {
+		display: flex;
+		flex-direction: column;
+		width: 150px;
+	}
+
+	.img_product {
+		width: 380px;
+		height: 380px;
+	}
+
+	.btn_productCol {
+		width: 120px;
+		padding: 12px 20px;
+	}
+
+	.product_icon {
+		padding: 0;
+	}
+	/* YOU MAY ALSO LIKE */
+
+	.youLikeContainer {
+		margin: 40px 160px 0 250px;
+	}
+
+	.youLike_title {
+		margin-right: 610px;
+		font-weight: bold;
+	}
+
+
+	/* COLLECTION CATEGORIES */
+
+	.coll_product_cat {
+		margin-left: 255px;
+	}
+
 /* IDS */
 
-	/* NAV ICONS */
+	/* NAV */
+
+	
+	#nav_link_logo {
+		font-weight: normal;
+		text-decoration: none;
+		color: black;
+		border: none;
+		padding-right: 75px;
+		padding-left: 0;
+		padding-top: 12px;
+		width: 80px;
+	}
 
 	 #icon_search, #icon_cart, #icon_login {
 		/* turn off button styling */
@@ -719,4 +818,5 @@ i {
 
 			color: #fff;
 			font-weight: bold;
+			cursor: pointer;
 		}

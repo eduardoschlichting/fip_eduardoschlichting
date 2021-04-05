@@ -6,6 +6,7 @@
 <!--link href="css/reset.css" rel="stylesheet" type="text/css" media="screen"-->
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined"><!-- Icons from google material icons for the buttons and nav -->
+<link rel="icon" href="images/dui_favcon.ico" type="image/x-icon">
 </head>
 <body>
 
@@ -15,21 +16,21 @@
 
 		<header>
 
-			<img class="logo_nav" src="images/dui_logo_2.svg" alt="dui clothing logo">
+			<a id="nav_link_logo" href="index.html" target="_blank"><img class="logo_nav" src="images/dui_logo_nav.svg" alt="dui clothing logo"></a>
 
 			<nav>
 				<h1 class="hidden">Main Navigation</h1>
 				<ul class="nav_links">
-					<li >Home</li>
-					<li>Clothing</li>
-					<li>Collections</li>
-					<li>About us</li>
+					<li><a class="nav_link" href="index.html" target="_blank">Home</a></li>
+					<li><a class="nav_link" href="clothing.html" target="_blank">Clothing</a></li>
+					<li><a class="nav_link" href="collections.html" target="_blank">Collections</a></li>
+					<li><a class="nav_link" href="about_contact.html" target="_blank">About us</a></li>
 				</ul>
 			</nav>
 			
 			<div class="nav_buttons">
 				<a id="icon_search" href="#"><i class="material-icons nav_icons">search</i></a>
-				<a id="icon_cart" href="#"><i class="material-icons-outlined nav_icons">shopping_cart</i></a>
+				<a id="icon_cart" href="#"><i class="material-icons-outlined nav_icons">local_mall</i></a>
 				<a id="icon_login" href="#">login  <i class="material-icons nav_icons">login</i></a>
 			</div>
 
@@ -38,7 +39,7 @@
 		<section class="hero_site">
 			<h1 class="hidden">Banner Home</h1>
 				<h1 class="banner_title">Based in London, Ontario &#x1F1E8;&#x1F1E6;</h1>
-				<h2 class="banner_subtitle">The Forest City of Canada.</h2>
+				<p class="banner_subtitle">The Forest City of Canada.</p>
 
 		</section>
 
@@ -49,34 +50,34 @@
 					<div class="about_p">
 						<p>Created by people with passion for fashion and lifestyle, here we have the objective to give Men a new vision of Men's Fashion, bringing simple, but significant and elegant clothes to your wardrobe.</p>
 					</div>
-
+			</div>
 		</section>
 
 		<section class="collectionContainer materialsContainer">
 			<h1 class="hidden">Materials DUI</h1>
 				<div class="materials_copy">
-					<h2>Our products are made of high quality, locally sourced  materials to provide you the ultimate comfort.</h2>
+					<p>Our products are made of high quality, locally sourced  materials to provide you the ultimate comfort.</p>
 				</div>
 				<a href="#" class="img_a"><img class="img_materials" src="images/collection_clothes.jpg" alt="clothes collection"></a>
 		</section>
 
 		<section class="hero_site banner_quote">
 			<h1 class="hidden">Banner About</h1>
-				<h2 class="bannerQuote_title">From Men to Men.<br>The DUI Brand is made of men concerned about today’s fashion and seek for a more stylish world.</h1>
+				<p class="bannerQuote_title">From Men to Men.<br>The DUI Brand is made of men concerned about today’s fashion and seek for a more stylish world.</p>
 
 		</section>
 
 		<aside class="asideContainer">
-			<h2 class="hidden">Aside Quote</h2>	
-			<h3>“Whoever said that money can’t buy happiness, simply didn’t know where to go shopping.” — Bo Derek</h3>
+			<h1 class="hidden">Aside Quote</h1>	
+			<h2>“Whoever said that money can’t buy happiness, simply didn’t know where to go shopping.”</h2>
 		</aside>
 
 		<section>
 			<h1 class="hidden">Contact Form</h1>
 			
 			<div class="contactContainer">
-				<h1 class="contact_title">Do you have any doubts, enquires or concerns? Contact us!</h1>
-				<h2 class="contact_subtitle">Just tell us your name, the matter of your contact, and we'll reply to you as soon as possible :D</h2>
+				<h2 class="contact_title">Do you have any doubts, enquires or concerns? Contact us!</h2>
+				<p class="contact_subtitle">Just tell us your name, the matter of your contact, and we'll reply to you as soon as possible :D</p>
 			</div>
 
 				<form class="contactFormContainer" action="form.php" method="post" name="contactForm">
@@ -87,7 +88,7 @@
 					<label for="lastName">And your last name?</label>
 					<input type="text" name="lastname" placeholder="Your last name" id="lastName">
 					
-					<label for="matter">Why are you contacting us?</label>
+					<label for="Matter">Why are you contacting us?</label>
 					
 					<select name="matter" id="Matter">
 						<option value="payment">Payments</option>
@@ -97,10 +98,10 @@
 						<option value="other">Other</option>
 					</select>
 
-					<label for="message">Message:</label>
+					<label for="Message">Message:</label>
 					<textarea rows="1" cols="1" placeholder="Your message" name="message" id="Message"></textarea>
-				
-				<button type="Submit">Submit</button>
+				</form>
+				<button type="Submit">submit</button>
 
 		</section>
 
@@ -142,7 +143,7 @@
 
 		<section>
 			<h1 class="hidden">Footer copyright</h1>
-				<h5 class="footer_copy">Copyright &copy; Eduardo Schlichting - FIP - IDP - Winter 2021 - Fanshawe College - London, Ontario, Canada</h5>
+				<p class="footer_copy">Copyright &copy; Eduardo Schlichting - FIP - IDP - Winter 2021 - Fanshawe College - London, Ontario, Canada</p>
 		</section>
 
 	</div>
