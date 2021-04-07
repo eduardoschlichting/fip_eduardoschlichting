@@ -170,7 +170,7 @@ i {
 			padding: 79px 0 79px 50px;
 			margin: 130px 84px 50px 84px; /* 84px align center */
 			color: white;
-			background-image: url(../images/background_test.jpg); /* ../ goes back one folder and starts from there */
+			background-image: url(../images/hero_home.jpg); /* ../ goes back one folder and starts from there */
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
@@ -199,6 +199,20 @@ i {
 		}
 
 
+	/* INTRO */
+
+	.intro_shop, .shipmentCollections, .discountClothing, .aboutContainer {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		
+		width: 800px;
+		margin: auto;
+		margin-bottom: 60px;
+	}
+
+
+
 	/* CATEGORIES HOME */
 
 		.catHomeContainer {
@@ -210,8 +224,8 @@ i {
 		}
 
 		.img_category_home {
-			max-width: 216px;
-			max-height: 306px;
+			width: 216px;
+			height: 306px;
 			padding-bottom: 25px;
 		}
 
@@ -402,6 +416,18 @@ i {
 /* CLOTHING PAGE */
 
 	
+	
+
+	.hero_clothing {
+		padding-top: 100px;
+		padding-bottom: 100px;
+
+		background-image: url(../images/hero_clothing.jpg);
+	}
+
+	
+
+
 	/* PRODUCTS CONTAINER */
 
 	.productsContainer {
@@ -417,6 +443,7 @@ i {
 	
 	.catList_title {
 		margin-bottom: -10px; /* align cat_list items to clothing images */
+		font-size: 24px;
 	}
 	.catListLinks {
 		list-style: none;
@@ -438,7 +465,7 @@ i {
 		
 		}
 
-		.clothing {
+		.clothing_title {
 			align-self: flex-start;
 			padding-right: 700px;
 			font-weight: bold;
@@ -544,6 +571,7 @@ i {
 
 	.collClothing_title {
 		margin-left: 110px;
+		font-size: 24px;
 	}
 	.collec_card {
 		display: flex;
@@ -603,6 +631,16 @@ i {
 /* ABOUT CONTACT PAGE */
 	
 	/* ABOUT CONTAINER */
+		
+		.hero_about {
+			padding-top: 110px;
+			padding-bottom: 110px;
+
+			background-image: url(../images/about_banner.jpg);
+			background-size: auto;
+
+		}
+
 		.aboutContainer {
 			display: flex;
 			justify-content: center;
@@ -644,7 +682,7 @@ i {
 	.banner_quote {
 		max-width: 924px;
 		margin: 100px auto;
-		background-image: url(../images/about_desc.jpg);
+		background-image: url(../images/quote_about.jpg);
 	}
 
 	.bannerQuote_title {
@@ -720,12 +758,19 @@ i {
 	.collection_title {
 		margin-left: 330px;
 		margin-bottom: 40px;
+		font-size: 24px;
 	}
 
 	.product_details {
 		display: flex;
 		flex-direction: column;
 		width: 150px;
+	}
+
+	.prod_description {
+		margin-top: 0;
+		width: 200px;
+		padding-bottom: 10px;
 	}
 
 	.img_product {
@@ -750,6 +795,7 @@ i {
 	.youLike_title {
 		margin-right: 610px;
 		font-weight: bold;
+		font-size: 24px;
 	}
 
 
@@ -757,6 +803,7 @@ i {
 
 	.coll_product_cat {
 		margin-left: 255px;
+		font-size: 24px;
 	}
 
 /* IDS */
