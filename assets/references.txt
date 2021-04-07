@@ -1,7 +1,0 @@
-https://developers.google.com/fonts/docs/material_icons
-
-icons used: search, shopping_cart, login, arrow_forward
-
-form styling:
-
-https://blog.logrocket.com/how-to-style-forms-with-css-a-beginners-guide/

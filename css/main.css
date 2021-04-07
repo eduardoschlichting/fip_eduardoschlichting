@@ -397,13 +397,14 @@ i {
 	.footer_links {
 		list-style: none;
 		padding-left: 0;
+		display: flex;
+		flex-direction: column;
 		
 	}
 
-
 	.footer_item:hover {
-		font-weight: bold;
 		cursor: pointer;
+		opacity: 60%;
 	}
 
 	.footer_copy {
@@ -622,7 +623,7 @@ i {
 			line-height: 15px; /* center align text vertically */
 		}
 
-		.btn_col:hover {
+		.btn_about:hover {
 			color: #fff;
 			background-color: black;
 		}
@@ -726,7 +727,7 @@ i {
 		}
 
 		.contactFormContainer button {
-			background-color: none;
+			background-color: transparent;
 			color: black;
 		}
 
@@ -759,6 +760,11 @@ i {
 		margin-left: 330px;
 		margin-bottom: 40px;
 		font-size: 24px;
+	}
+
+	.prodCollection_name {
+		font-size: 20px;
+		width: 200px;
 	}
 
 	.product_details {
