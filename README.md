@@ -1,12 +1,12 @@
 # Final Integrated Project - 2021 Winter
 
-##Eduardo Bianchini Schlichting
+## Eduardo Bianchini Schlichting
 
 # Project Description
 
 ## DUI CLOTHING :love_you_gesture:
 
-<img src="images/dui_logo.svg" alt="DUI Clothing Logo" width="200">
+<img src="images/dui_logo.svg" alt="DUI Clothing Logo" width="350" align="center">
 
 <img src="images/dui_homepage.jpg" alt="DUI Homepage">
 
@@ -38,7 +38,7 @@ Copy repository from Github to preferred project location. You're good to go!
 2. Create your feature branch: `git checkout -b my-new-feature`
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
+5. Submit a pull request with a clear description of what you have done and what does it changes :D
 
 # History
 Write history
