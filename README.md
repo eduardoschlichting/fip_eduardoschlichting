@@ -6,7 +6,7 @@
 
 ## DUI CLOTHING :love_you_gesture:
 
-<img src="images/dui_logo.svg" alt="DUI Clothing Logo" width="350" align="center">
+<img src="images/dui_logo.svg" alt="DUI Clothing Logo" width="350" align="middle">
 
 <img src="images/dui_homepage.jpg" alt="DUI Homepage">
 
