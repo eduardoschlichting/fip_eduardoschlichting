@@ -4,6 +4,12 @@
 
 # Project Description
 
+## DUI CLOTHING :love_you_gesture:
+
+<img src="images/dui_logo.svg" alt="DUI Clothing Logo" width="200">
+
+<img src="images/dui_homepage.jpg" alt="DUI Homepage">
+
 This is the Final Integrated Project for the Winter Term of the Interactive Media Design program at Fanshawe College.
 
 Here, a website was built based on what have been exposed to the students throughout the term, including Design, Photography and technologies used in Web Design.

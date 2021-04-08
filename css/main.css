@@ -1,14 +1,14 @@
 /* TAG SELECTORS */
 
 body {
-	font-family: Poppins, Helvetica, sans-serif;
+	font-family: Poppins, Helvetica, Arial, sans-serif;
 }
 
 header {
 	/* positioning */
 	display: flex;
 	flex-wrap: wrap;
-	width: 1280px; /* so the shadow effect appears in the whole page width */
+	width: 1280px; 
 	height: 80px;
 	
 	position: fixed;
@@ -23,7 +23,7 @@ header {
 }
 
 nav {
-	margin-right: auto; /* the way that I found to put the nav bar in the left */
+	margin-right: auto; /* put the nav bar in the left */
 	flex-wrap: wrap;
 
 }
@@ -75,9 +75,9 @@ i {
 	
 	
 	#site_container {
-	margin: 0 auto;
-	width: 1280px;
-	overflow: hidden;
+		margin: 0 auto;
+		width: 1280px;
+		overflow: hidden;
 	}
 
 
@@ -97,7 +97,7 @@ i {
 	}
 
 
-/* NEWSLETTER */
+	/* NEWSLETTER */
 
 		.newsletterContainer {
 			display: flex;
@@ -158,6 +158,7 @@ i {
 		}
 
 /* HOME */
+	
 	/* BANNER HOME */
 
 		.hero_site {
@@ -170,7 +171,7 @@ i {
 			padding: 79px 0 79px 50px;
 			margin: 130px 84px 50px 84px; /* 84px align center */
 			color: white;
-			background-image: url(../images/hero_home.jpg); /* ../ goes back one folder and starts from there */
+			background-image: url(../images/hero_home_2.jpg); /* ../ goes back one folder and starts from there */
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
@@ -201,17 +202,15 @@ i {
 
 	/* INTRO */
 
-	.intro_shop, .shipmentCollections, .discountClothing, .aboutContainer {
-		display: flex;
-		flex-direction: column;
-		text-align: center;
-		
-		width: 800px;
-		margin: auto;
-		margin-bottom: 60px;
-	}
-
-
+		.intro_shop, .shipmentCollections, .discountClothing, .aboutContainer {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			
+			width: 800px;
+			margin: auto;
+			margin-bottom: 60px;
+		}
 
 	/* CATEGORIES HOME */
 
@@ -268,7 +267,6 @@ i {
 			flex-flow: row wrap;
 			margin: 100px auto;
 			width: 850px;
-
 		}
 
 		.img_collection {
@@ -338,7 +336,6 @@ i {
 			flex-flow: column wrap;
 
 			margin: 0 60px 60px 0;
-		
 		}
 		
 		.img_onsale {
@@ -377,47 +374,42 @@ i {
 
 	/* FOOTER */
 
-	.footerContainer {
-		display: flex;
-		justify-content: space-between;
-		width: 1100px;
+		.footerContainer {
+			display: flex;
+			justify-content: space-between;
+			width: 1100px;
 
-		margin: 120px auto -30px;
-		padding-top: 30px;
-		padding-bottom: 30px;
+			margin: 120px auto -30px;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			}
+
+		
+		.logo_footer {
+			width: 15%;
+			padding-top: 25px;	
 		}
 
-	
-	.logo_footer {
-		width: 15%;
-		padding-top: 25px;
-		
-	}
+		.footer_links {
+			list-style: none;
+			padding-left: 0;
+			display: flex;
+			flex-direction: column;	
+		}
 
-	.footer_links {
-		list-style: none;
-		padding-left: 0;
-		display: flex;
-		flex-direction: column;
-		
-	}
+		.footer_item:hover {
+			cursor: pointer;
+			opacity: 60%;
+		}
 
-	.footer_item:hover {
-		cursor: pointer;
-		opacity: 60%;
-	}
-
-	.footer_copy {
-		text-align: center;
-		font-weight: 400;
-		font-size: 14px;
-	}
+		.footer_copy {
+			text-align: center;
+			font-weight: 400;
+			font-size: 14px;
+		}
 
 
 /* CLOTHING PAGE */
-
-	
-	
 
 	.hero_clothing {
 		padding-top: 100px;
@@ -426,35 +418,32 @@ i {
 		background-image: url(../images/hero_clothing.jpg);
 	}
 
-	
-
-
 	/* PRODUCTS CONTAINER */
 
-	.productsContainer {
-		display: flex;
-		justify-content: center;
-	}
-	/* Categories List */
-	.catListContainer {
-		display: flex;
-		flex-flow: column wrap;
-		margin-left: 60px; /* compensate clothing card margin 60 */
-	}
-	
-	.catList_title {
-		margin-bottom: -10px; /* align cat_list items to clothing images */
-		font-size: 24px;
-	}
-	.catListLinks {
-		list-style: none;
-		padding-left: 0;
-	}
+		.productsContainer {
+			display: flex;
+			justify-content: center;
+		}
+		/* Categories List */
+		.catListContainer {
+			display: flex;
+			flex-flow: column wrap;
+			margin-left: 60px; /* compensate clothing card margin 60 */
+		}
+		
+		.catList_title {
+			margin-bottom: -10px; /* align cat_list items to clothing images */
+			font-size: 24px;
+		}
+		.catListLinks {
+			list-style: none;
+			padding-left: 0;
+		}
 
-	.catListLinks li:hover {
-		font-weight: bold;
-		cursor: pointer;
-	}
+		.catListLinks li:hover {
+			font-weight: bold;
+			cursor: pointer;
+		}
 
 /* Clothing Product List */
 	.clothingContainer {
@@ -480,7 +469,7 @@ i {
 		}
 		
 		.img_clothing {
-		width: 150px;
+			width: 150px;
 		}
 
 		.img_clothing:hover {
@@ -562,45 +551,44 @@ i {
 			background-color: black;
 		}
 
-	
-/* COLLECTIONS CATEGORIES */
-	.collClothingContainer {
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: center;
-	}
+	/* COLLECTIONS CATEGORIES */
+		.collClothingContainer {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: center;
+		}
 
-	.collClothing_title {
-		margin-left: 110px;
-		font-size: 24px;
-	}
-	.collec_card {
-		display: flex;
-		justify-content: center;
-		margin-right: 30px;
-		margin-left: 30px;
-	}
+		.collClothing_title {
+			margin-left: 110px;
+			font-size: 24px;
+		}
+		.collec_card {
+			display: flex;
+			justify-content: center;
+			margin-right: 30px;
+			margin-left: 30px;
+		}
 
-	.img_col_clothing {
-		width: 216px
-	}
-	.btn_col_clothing {
-		position: absolute; /* positionate the button in the middle of the image */
-		margin-top: 200px;
-		border-color: #fff;
-		width: 70px;
-		padding-top: 6px;
-		padding-bottom: 6px;
-		text-align: center;
-	}
+		.img_col_clothing {
+			width: 216px
+		}
+		.btn_col_clothing {
+			position: absolute; /* positionate the button in the middle of the image */
+			margin-top: 200px;
+			border-color: #fff;
+			width: 70px;
+			padding-top: 6px;
+			padding-bottom: 6px;
+			text-align: center;
+		}
 
-	.btn_col_clothing:hover {
-			color: black;
-			background-color: white;
-	}
+		.btn_col_clothing:hover {
+				color: black;
+				background-color: white;
+		}
 
-/* ABOUT US CTA */
-	.aboutCtaContainer {
+	/* ABOUT US CTA */
+		.aboutCtaContainer {
 			display: flex;
 			justify-content: space-around;
 			align-items: center;
@@ -736,7 +724,6 @@ i {
 			color: #fff;
 			cursor: pointer;
 		}
-
 
 
 /* COLLECTIONS PAGE */
