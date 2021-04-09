@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About us - Dui Clothing</title>
+<!--link href="css/reset.css" rel="stylesheet" type="text/css" media="screen"-->
+<link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined"><!-- Icons from google material icons for the buttons and nav -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> <!-- to be sure that the chosen font will work-->
+<link rel="icon" href="images/dui_favcon.ico" type="image/x-icon">
+</head>
+<body>
+
+	<h1 class="hidden">About Us and Contact Page</h1>
+
+	<div id="site_container">
+
+		<header>
+
+			<a id="nav_link_logo" href="index.html" target="_blank"><img class="logo_nav" src="images/dui_logo_nav.svg" alt="dui clothing logo"></a>
+
+			<nav>
+				<h2 class="hidden">Main Navigation</h2>
+				<ul class="nav_links">
+					<li><a class="nav_link" href="index.html" target="_blank">Home</a></li>
+					<li><a class="nav_link" href="clothing.html" target="_blank">Clothing</a></li>
+					<li><a class="nav_link" href="collections.html" target="_blank">Collections</a></li>
+					<li><a class="nav_link" href="about_contact.html" target="_blank">About us</a></li>
+				</ul>
+			</nav>
+			
+			<div class="nav_buttons">
+				<a id="icon_search" href="#"><i class="material-icons nav_icons">search</i></a>
+				<a id="icon_cart" href="#"><i class="material-icons-outlined nav_icons">local_mall</i></a>
+				<a id="icon_login" href="#">login  <i class="material-icons nav_icons">login</i></a>
+			</div>
+
+		</header>
+
+	<main role="main">
+
+		<section class="hero_site hero_about">
+			<h1 class="hidden">Banner About</h1>
+				<h2 class="banner_title">Based in London, Ontario &#x1F1E8;&#x1F1E6;</h2>
+				<p class="banner_subtitle">In Southwestern Ontario, also known as The Forest City of Canada.</p>
+
+		</section>
+
+		<section>
+			<h1 class="hidden">About DUI Clothing</h1>
+			<article class="aboutContainer">
+				<h2 class="about_title">We are DUI CLothing&trade;</h2>
+					<div class="about_p">
+						<p>Created by people with passion for fashion and lifestyle, here we have the objective to give Men a new vision of Men's Fashion, bringing simple, but significant and elegant clothes to your wardrobe.</p>
+					</div>
+			</article>
+		</section>
+
+		<section class="collectionContainer materialsContainer">
+			<h2 class="hidden">Materials DUI</h2>
+				<div class="materials_copy">
+					<p>Our products are made of high quality, locally sourced  materials to provide you the ultimate comfort.</p>
+				</div>
+				<a href="#" class="img_a"><img class="img_materials" src="images/materials.jpg" alt="DUI Materials"></a>
+		</section>
+
+		<section class="hero_site banner_quote">
+			<h2 class="hidden">Banner About</h2>
+				<p class="bannerQuote_title">From Men to Men.<br>The DUI Brand is made of men concerned about today’s fashion and seek for a more stylish world.</p>
+
+		</section>
+
+		<section>
+			<h1 class="hidden">Shipping Inform</h1>
+				<article class="shipmentCollections">
+					<h2>Shipping</h2>
+					<p>Our products are shipped with a maximum of one day from the purchase date. The delivery may take at least 5 days depending on your location. If you have any concern, contact us by email.</p>
+				</article>
+		</section>
+
+		<aside class="asideContainer">
+			<h2 class="hidden">Aside Quote</h2>	
+			<h3>“Whoever said that money can’t buy happiness, simply didn’t know where to go shopping.”</h3>
+		</aside>
+
+		<section>
+			<h1 class="hidden">Contact Form</h1>
+			
+			<div class="contactContainer">
+				<h2 class="contact_title">Do you have any doubts, enquires or concerns? Contact us!</h2>
+				<p class="contact_subtitle">Just tell us your name, the matter of your contact, and we'll reply to you as soon as possible :D</p>
+			</div>
+
+				<form class="contactFormContainer" action="form.php" method="post" name="contactForm">
+
+					<label for="firstName">What is your first name?</label>
+					<input type="text" name="firstname" placeholder="Your first name" id="firstName">
+
+					<label for="lastName">And your last name?</label>
+					<input type="text" name="lastname" placeholder="Your last name" id="lastName">
+					
+					<label for="Matter">Why are you contacting us?</label>
+					
+					<select name="matter" id="Matter">
+						<option value="payment">Payments</option>
+						<option value="shipping">Shippping</option>
+						<option value="tracking">Track your order</option>
+						<option value="returns">Returns</option>
+						<option value="other">Other</option>
+					</select>
+
+					<label for="Message">Message:</label>
+					<textarea rows="1" cols="1" placeholder="Your message" name="message" id="Message"></textarea>
+
+					<button type="Submit">submit</button>
+				</form>			
+		</section>
+
+	</main>
+
+		<section class="footerContainer">
+			<h2 class="hidden">Footer Navigation</h2>
+
+				<nav class="footer_menu">
+					<h4 class="title_footermenu">Sitemap</h4>
+						<ul class="nav_links footer_links">
+							<li class="footer_item"><a class="nav_link" href="index.html" target="_blank">Home</a></li>
+							<li class="footer_item"><a class="nav_link" href="clothing.html" target="_blank">Clothing</a></li>
+							<li class="footer_item"><a class="nav_link" href="collections.html" target="_blank">Collections</a></li>
+							<li class="footer_item"><a class="nav_link" href="about_contact.html" target="_blank">About us</a></li>
+						</ul>
+				</nav>
+
+				<nav class="footer_menu">
+					<h4 class="title_footermenu">Contact us</h4>
+						<ul class="nav_links footer_links">
+							<li class="footer_item">15 Jacksway Crescent</li>
+							<li class="footer_item">London, Ontario, Canada</li>
+							<li class="footer_item">222 333 3456</li>
+							<li class="footer_item">contact@duiclothing.com</li>
+						</ul>
+				</nav>
+
+				<nav class="footer_menu">
+					<h4 class="title_footermenu">Follow us on Social Media</h4>
+						<ul class="footer_links">
+							<li class="footer_item">Instagram</li>
+							<li class="footer_item">Twitter</li>
+							<li class="footer_item">Facebook</li>
+							<li class="footer_item">Pinterest</li>
+						</ul>
+				</nav>
+
+				<img class="logo_footer" src="images/dui_logo.svg" alt="dui clothing logo">
+		</section>
+
+		<section>
+			<h2 class="hidden">Footer copyright</h2>
+				<p class="footer_copy">Copyright &copy; Eduardo Schlichting - FIP - IDP - Winter 2021 - Fanshawe College - London, Ontario, Canada</p>
+		</section>
+
+	</div>
+<script src="js/main.js"></script>
+</body>
+</html>
